@@ -1,357 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가양 클럽 비교 | 정보 – 가양 No.1 클럽 전문 분석</title>
-    <meta name="description" content="가양 클럽 비교 플랫폼의 상세 정보. 최신 가양 클럽 데이터, 이용자 평가, 혜택 통계를 바탕으로 한 전문 분석. 가양 지역 클럽 선택의 기준을 제시합니다.">
-    <meta name="keywords" content="가양 클럽 비교, 가양 클럽 정보, 가양 클럽 데이터, 가양 클럽 분석, 가양 클럽 통계, 가양 클럽 리뷰, 가양 클럽 혜택">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://gayang-club-guide.node-link.shop/about.html">
-    <!-- Open Graph / Twitter -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="가양 클럽 비교 | 가양 No.1 클럽 정보 &amp; 분석">
-    <meta property="og:description" content="가양 클럽 비교 플랫폼의 상세 정보. 최신 가양 클럽 데이터, 이용자 평가, 혜택 통계를 바탕으로 한 전문 분석.">
-    <meta property="og:url" content="https://gayang-club-guide.node-link.shop/about.html">
-    <meta property="og:image" content="https://t3b06-gy-club-cmp-1.vercel.app/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="가양 클럽 비교 | 가양 No.1 클럽 정보 &amp; 분석">
-    <meta name="twitter:description" content="가양 클럽 비교 플랫폼의 상세 정보. 최신 가양 클럽 데이터, 이용자 평가, 혜택 통계를 바탕으로 한 전문 분석.">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "가양 클럽 비교",
-        "description": "가양 지역 클럽 비교 플랫폼. 최신 데이터와 리뷰로 클럽 선택을 돕습니다.",
-        "url": "https://t3b06-gy-club-cmp-1.vercel.app/info",
-        "telephone": "+82-2-1234-5678",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "가양",
-            "addressRegion": "서울",
-            "addressCountry": "KR"
-        },
-        "areaServed": "가양",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "247"
-        }
-    }
-    </script>
-
-    <style>
-        /* === RESET & BASE === */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            background: #0b0c0e;
-            color: #e6e6e6;
-            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-        img, svg {
-            max-width: 100%;
-            display: block;
-        }
-        a {
-            color: #ff2a6d;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul, ol {
-            list-style: none;
-        }
-        button {
-            cursor: pointer;
-            border: none;
-            background: transparent;
-            font: inherit;
-            color: inherit;
-        }
-        /* === TYPOGRAPHY (BRUTALIST RAW) === */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-        }
-        h1 {
-            font-size: 3.2rem;
-            text-transform: uppercase;
-            color: #f0f0f0;
-        }
-        h2 {
-            font-size: 2.4rem;
-            border-left: 6px solid #ff2a6d;
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        h3 {
-            font-size: 1.6rem;
-            margin-bottom: 0.8rem;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            max-width: 72ch;
-        }
-        .text-accent {
-            color: #ff2a6d;
-            font-weight: 700;
-        }
-        /* === LAYOUT & SPACING === */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        /* nav-present, hamburger-menu */
-        nav {
-            background: #141518;
-            padding: 0.8rem 0;
-            border-bottom: 2px solid #ff2a6d;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .nav-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo a {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: #ff2a6d;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-        }
-        .hamburger-menu span {
-            width: 28px;
-            height: 3px;
-            background: #e6e6e6;
-            border-radius: 2px;
-            transition: 0.3s;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        .nav-links a {
-            color: #ccc;
-            font-weight: 600;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            padding: 0.4rem 0;
-            border-bottom: 2px solid transparent;
-            transition: 0.15s;
-        }
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #ff2a6d;
-            border-bottom-color: #ff2a6d;
-        }
-        .tel-link {
-            background: #ff2a6d;
-            color: #0b0c0e !important;
-            padding: 0.4rem 1rem !important;
-            border-radius: 4px;
-            font-weight: 800;
-            border-bottom: none !important;
-        }
-        .tel-link:hover {
-            background: #e61e5a;
-        }
-        /* hero */
-        .page-hero {
-            padding: 4rem 0 3rem;
-            border-bottom: 1px solid #2a2c30;
-        }
-        .page-hero h1 {
-            margin-bottom: 0.5rem;
-        }
-        .page-hero .subhead {
-            font-size: 1.2rem;
-            color: #aaa;
-            max-width: 60ch;
-        }
-        /* content sections */
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
-            padding: 3rem 0;
-        }
-        .info-card {
-            background: #1a1c20;
-            padding: 2rem;
-            border-radius: 8px;
-            border-left: 4px solid #ff2a6d;
-        }
-        .info-card h3 {
-            color: #ff2a6d;
-        }
-        .stat-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem 2.5rem;
-            margin-top: 1rem;
-        }
-        .stat-item {
-            font-size: 1.1rem;
-        }
-        .stat-item strong {
-            display: block;
-            font-size: 2rem;
-            color: #ff2a6d;
-            line-height: 1;
-        }
-        .faq-section {
-            padding: 3rem 0;
-            border-top: 1px solid #2a2c30;
-        }
-        .faq-item {
-            border-bottom: 1px solid #2a2c30;
-            padding: 1.2rem 0;
-        }
-        .faq-question {
-            font-weight: 700;
-            font-size: 1.2rem;
-            margin-bottom: 0.4rem;
-            color: #f0f0f0;
-        }
-        .faq-answer {
-            color: #b0b0b0;
-            max-width: 80ch;
-        }
-        footer {
-            background: #141518;
-            padding: 2rem 0;
-            text-align: center;
-            border-top: 2px solid #ff2a6d;
-            margin-top: 2rem;
-        }
-        footer p {
-            font-size: 0.85rem;
-            color: #777;
-        }
-        /* responsive-768 */
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.8rem; }
-            .info-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background: #141518;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                padding: 1rem 1.5rem;
-                gap: 0.8rem;
-                border-bottom: 2px solid #ff2a6d;
-            }
-            .nav-links.open { display: flex; }
-            .hamburger-menu { display: flex; }
-            .stat-list { gap: 1rem; }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가양 클럽 정보</title>
+  <meta name="description" content="가양에 처음 오는 분들을 위한 클럽 선택 가이드. 이용 전 꼭 알아야 할 확인사항과 상황별 적합성을 상세히 안내합니다.">
+  <meta name="keywords" content="가양, 클럽, 비교, 초행자 가이드, 선택 기준, 클럽 이용 방법">
+  <link rel="canonical" href="https://gayang-club-guide.node-link.shop/about.html">
+  <meta property="og:title" content="가양 클럽 비교 — 처음 방문자를 위한 조건별 선택 안내">
+  <meta property="og:description" content="가양에 처음 오는 분들을 위한 클럽 선택 가이드. 이용 전 꼭 알아야 할 확인사항과 상황별 적합성을 상세히 안내합니다.">
+  <meta property="og:url" content="https://gayang-club-guide.node-link.shop/about.html">
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <h1>가양 클럽 상세 정보</h1>
+      <p>가양 지역에 위치한 다양한 클럽을 한눈에 파악하고, 상황별로 가장 알맞은 선택을 할 수 있도록 도와드립니다.</p>
+    </header>
 
-<!-- Navigation -->
-<nav>
-    <div class="container nav-inner">
-        <div class="logo"><a href="/">가양클럽비교</a></div>
-        <div class="hamburger-menu" aria-label="메뉴 열기" role="button" tabindex="0">
-            <span></span><span></span><span></span>
-        </div>
-        <div class="nav-links">
-            <a href="/">홈</a>
-            <a href="/compare">비교</a>
-            <a href="/reviews">리뷰</a>
-            <a href="/info" class="active">정보</a>
-            <a href="/benefits">혜택</a>
-            <a href="tel:+82212345678" class="tel-link">📞 02-1234-5678</a>
-        </div>
-    </div>
-</nav>
+    <nav class="nav-present">
+      <ul>
+        <li><a href="/index.html">홈</a></li>
+        <li><a href="/clubs.html">클럽 목록</a></li>
+        <li><a href="/info.html">정보</a></li>
+        <li><a href="/contact.html">연락처</a></li>
+      </ul>
+    </nav>
 
-<!-- Hero -->
-<section class="page-hero">
-    <div class="container">
-        <h1>가양 클럽 비교<br><span class="text-accent">정보 &amp; 데이터</span></h1>
-        <p class="subhead">가양 지역 클럽에 대한 모든 객관적 정보. 실제 이용자 평가, 혜택 통계, 전문가 분석을 통해 신뢰할 수 있는 데이터를 제공합니다.</p>
-    </div>
-</section>
+    <main>
+      <section class="section">
+        <h2>가양 클럽의 기본 특징</h2>
+        <p>가양은 주거와 업무가 어우러진 복합적인 동네이며, 클럽 역시 다양한 분위기와 테마를 가지고 있습니다. 보통 20대 후반부터 30대 초반까지의 젊은 층이 주된 고객층이며, 친밀한 분위기와 최신 음악 트렌드를 즐길 수 있는 곳이 많습니다.</p>
+        <p>대부분의 클럽은 지하철 9호선 가양역에서 도보 5분 이내에 위치해 있어 접근성이 뛰어나며, 주차 시설을 별도로 제공하는 경우가 적지만 주변 공영 주차장을 활용할 수 있습니다. 영업시간은 주로 오후 9시부터 새벽 4시까지이며, 주말에 더 활발히 운영되는 편입니다.</p>
+      </section>
 
-<!-- Detailed info grid -->
-<section class="container info-grid">
-    <!-- Card 1: Overview -->
-    <div class="info-card">
-        <h3>📊 가양 클럽 시장 개요</h3>
-        <p>2025년 1분기 기준 가양 지역 내 주요 클럽 12개소의 운영 데이터를 분석했습니다. 평균 이용자 만족도는 4.7/5.0, 주말 대비 평일 방문객 증가율은 22%로 나타났습니다.</p>
-        <div class="stat-list">
-            <div class="stat-item"><strong>247</strong> 검증 리뷰</div>
-            <div class="stat-item"><strong>4.8</strong> 종합 평점</div>
-            <div class="stat-item"><strong>12</strong> 비교 클럽</div>
-        </div>
-    </div>
-    <!-- Card 2: Methodology -->
-    <div class="info-card">
-        <h3>⚙️ 분석 방법론</h3>
-        <p>본 플랫폼의 데이터는 공식 홈페이지, 실제 방문자 피드백, 업계 보고서를 크로스체크하여 신뢰도를 확보합니다. 모든 수치는 분기별로 갱신되며, 이상치는 통계적으로 제거합니다.</p>
-        <p class="text-accent">→ 최종 업데이트: 2025.03.15</p>
-    </div>
-    <!-- Card 3: Key Findings -->
-    <div class="info-card">
-        <h3>🔍 주요 인사이트</h3>
-        <ul style="list-style: disc; padding-left: 1.2rem; color: #ccc;">
-            <li>가양 클럽 평균 이용료: 22,000원 (음료 포함)</li>
-            <li>이용자 선호 시간대: 20:00~23:00 (54%)</li>
-            <li>재방문율 73% (전국 평균 대비 8%p 높음)</li>
-            <li>VIP 혜택 보유 클럽 비율: 58%</li>
-        </ul>
-    </div>
-    <!-- Card 4: Local Signal -->
-    <div class="info-card">
-        <h3>📍 가양 지역 시그널</h3>
-        <p>가양은 최근 교통편 개선과 상업시설 확장으로 클럽 업계의 주목을 받고 있습니다. 2024년 대비 신규 클럽 오픈이 25% 증가했으며, 역세권 클럽의 방문객이 40% 늘었습니다. 이는 가양이 클럽 문화의 새로운 중심지로 부상하고 있음을 의미합니다.</p>
-        <p><strong class="text-accent">가양 클럽 비교</strong>는 이러한 지역 변화를 실시간으로 반영합니다.</p>
-    </div>
-</section>
+      <section class="section">
+        <h2>방문 목적에 따른 선택 기준</h2>
+        <p>① <strong>친구와 파티 분위기</strong>를 원한다면 대형 무대와 조명 효과가 풍부한 클럽을 추천합니다. 이곳은 대체로 외부 인원 유입이 많아 활기찬 분위기를 즐길 수 있습니다.</p>
+        <p>② <strong>조용히 음악을 감상하고 싶을 때</strong>는 소규모 라운지형 클럽을 선택하세요. 어두운 조명보다 은은한 조명이 분위기를 연출하고, DJ가 직접 선곡하는 잔잔한 트랙이 주를 이룹니다.</p>
+        <p>③ <strong>특정 테마 파티</strong>를 찾고 있다면 사전 공지를 확인하고, 해당 날짜에 맞춰 방문하는 것이 좋습니다. 시즌마다 진행되는 테마 파티는 드레스 코드와 입장 제한이 있을 수 있으니 미리 확인해 주세요.</p>
+      </section>
 
-<!-- FAQ Section -->
-<section class="faq-section">
-    <div class="container">
-        <h2>자주 묻는 질문</h2>
-        <div class="faq-item">
-            <p class="faq-question">가양 클럽 비교 플랫폼의 데이터는 얼마나 신뢰할 수 있나요?</p>
-            <p class="faq-answer">모든 데이터는 최소 3개 이상의 출처를 교차 검증하며, 분기별로 갱신됩니다. 이용자 리뷰는 실제 방문자에 한해 수집되며, 이상 탐지 시스템을 통해 허위 리뷰를 걸러냅니다. 현재 247개의 검증된 리뷰를 기반으로 합니다.</p>
+      <section class="section">
+        <h2>클럽 이용 시 체크리스트</h2>
+        <p>첫 방문 시에는 입장 전 기본적인 확인 절차가 있습니다. 신분증 제시, 나이 확인(23세 이상) 및 입장료 결제는 필수이며, 일부 클럽은 사전 예약을 요구하기도 합니다. 예약을 할 경우, 최소 30분 전에 도착해 대기 시간을 최소화하는 것이 좋습니다.</p>
+        <p>또한, 클럽 내부에서는 개인 물품 보관이 제한될 수 있습니다. 가방이나 큰 소지품은 락커에 보관하고, 중요한 물건은 따로 챙겨두는 것이 안전합니다. 마스크 착용 여부와 방역 지침은 현재 상황에 따라 변동될 수 있으니, 방문 전 공식 SNS나 홈페이지에서 최신 정보를 확인하세요.</p>
+      </section>
+
+      <section class="section">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+        <div class="v-card-3jlf">
+          <div class="card">
+            <h3>Q. 가양 클럽은 주말에만 영업하나요?</h3>
+            <p>A. 대부분의 클럽은 평일에도 운영하지만, 주중에는 영업 시간이 짧거나 입장 인원이 제한될 수 있습니다. 정확한 영업 일정은 각 클럽 공식 채널을 참고해 주세요.</p>
+          </div>
+          <div class="card">
+            <h3>Q. 드레스 코드는 꼭 있어야 하나요?</h3>
+            <p>A. 클럽마다 다르지만, 일반적으로 깔끔한 캐주얼 복장이 가장 무난합니다. 테마 파티나 고급 라운지형 클럽은 정장 또는 파티 의상을 요구할 수 있으니 사전 확인이 필요합니다.</p>
+          </div>
+          <div class="card">
+            <h3>Q. 입장료는 어떻게 결제하나요?</h3>
+            <p>A. 현금, 카드, 모바일 결제 모두 가능하지만, 일부 클럽은 현금만 받는 경우가 있습니다. 입장 전 현금이 부족하면 입구에서 결제 방식에 대해 문의해 주세요.</p>
+          </div>
         </div>
-        <div class="faq-item">
-            <p class="faq-question">클럽 비교 시 가장 중요한 요소는 무엇인가요?</p>
-            <p class="faq-answer">가양 클럽 비교는 음료 품질, 분위기, 가격 대비 만족도, 접근성, VIP 혜
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 가양 클럽 가이드. 모든 권리 보유.</p>
+      <a class="btn" href="mailto:info@gayang-club-guide.node-link.shop">문의하기</a>
+    </footer>
+  </div>
 </body>
 </html>

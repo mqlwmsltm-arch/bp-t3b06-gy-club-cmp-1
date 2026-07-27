@@ -1,696 +1,101 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가양 클럽 비교 | 가양 No.1 클럽 정보 &amp; 분석</title>
-    <meta name="description" content="가양 클럽 비교 플랫폼. 가양 지역 최신 클럽 데이터, 리뷰, 혜택을 한곳에 모았습니다. 전문가 분석과 실제 이용자 평가로 완벽한 클럽 선택을 도와드립니다.">
-    <meta name="keywords" content="가양 클럽 비교, 가양 클럽, 가양 클럽 추천, 가양 클럽 순위, 가양 클럽 리뷰, 가양 클럽 예약, 가양 클럽 혜택">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://gayang-club-guide.node-link.shop/">
-
-    <!-- Open Graph / Twitter -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="가양 클럽 비교 | 가양 No.1 클럽 정보 &amp; 분석">
-    <meta property="og:description" content="가양 클럽 비교 플랫폼. 가양 지역 최신 클럽 데이터, 리뷰, 혜택을 한곳에 모았습니다. 전문가 분석과 실제 이용자 평가로 완벽한 클럽 선택을 도와드립니다.">
-    <meta property="og:url" content="https://gayang-club-guide.node-link.shop/">
-    <meta property="og:site_name" content="가양 클럽 비교">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="가양 클럽 비교 | 가양 No.1 클럽 정보 &amp; 분석">
-    <meta name="twitter:description" content="가양 클럽 비교 플랫폼. 가양 지역 최신 클럽 데이터, 리뷰, 혜택을 한곳에 모았습니다. 전문가 분석과 실제 이용자 평가로 완벽한 클럽 선택을 도와드립니다.">
-
-    <!-- JSON-LD 스키마 (LocalBusiness + AggregateRating) -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "가양 클럽 비교",
-  "description": "가양 지역 클럽 정보 및 비교 서비스",
-  "url": "https://gayang-club-guide.node-link.shop/",
-  "telephone": "+82-10-6279-0862",
-  "areaServed": {
-    "@type": "City",
-    "name": "가양"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "bestRating": "5",
-    "ratingCount": "189"
-  }
-}</script>
-
-    <style>
-        /* === RESET & BASE === */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: 'Impact', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            line-height: 1.3;
-            letter-spacing: 0.01em;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            padding: 0;
-            margin: 0;
-        }
-        img, svg {
-            display: block;
-            max-width: 100%;
-        }
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-        ul, ol {
-            list-style: none;
-        }
-        button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-family: inherit;
-            color: inherit;
-        }
-
-        /* === TYPOGRAPHY (BRUTALIST RAW) === */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Impact', system-ui, sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-            line-height: 0.95;
-            font-weight: 700;
-        }
-        h1 {
-            font-size: clamp(3.2rem, 12vw, 6rem);
-            margin-bottom: 0.3em;
-            color: #ff3b00;
-            text-shadow: 4px 4px 0 #000000, 6px 6px 0 rgba(255, 59, 0, 0.3);
-            transform: rotate(-1deg);
-        }
-        h2 {
-            font-size: clamp(2.4rem, 7vw, 4.5rem);
-            margin-bottom: 0.5em;
-            border-left: 8px solid #ff3b00;
-            padding-left: 0.4em;
-            transform: skewX(-3deg);
-        }
-        h3 {
-            font-size: clamp(1.6rem, 4vw, 2.6rem);
-            margin-bottom: 0.4em;
-        }
-        p {
-            font-family: 'system-ui', sans-serif;
-            font-weight: 400;
-            line-height: 1.6;
-            margin-bottom: 1.2em;
-            max-width: 70ch;
-        }
-        .text-accent {
-            color: #ff3b00;
-        }
-
-        /* === LAYOUT & SPACING (AIRY) === */
-        .container {
-            padding: 40px 72px;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-        @media (max-width: 768px) {
-            .container {
-                padding: 32px 24px;
-            }
-        }
-        section {
-            padding: 72px 0;
-            margin-bottom: 48px;
-            position: relative;
-        }
-        .section-gap {
-            margin-top: 72px;
-            margin-bottom: 72px;
-        }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-        }
-        @media (max-width: 768px) {
-            .grid-2 {
-                grid-template-columns: 1fr;
-                gap: 48px;
-            }
-        }
-        .flex-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 48px;
-            align-items: flex-start;
-        }
-
-        /* === BRUTALIST ELEMENTS: BORDERS, SKEW, NEGATIVE MARGIN === */
-        .brutal-border {
-            border: 4px solid #ffffff;
-            padding: 32px;
-            background-color: #000000;
-            box-shadow: 12px 12px 0 #ff3b00;
-        }
-        .brutal-border-thin {
-            border: 3px solid #ffffff;
-            padding: 24px;
-        }
-        .skew-box {
-            transform: skewX(-2deg);
-            background-color: #111;
-            border-right: 6px solid #ff3b00;
-            padding: 24px 32px;
-        }
-        .negative-margin {
-            margin-top: -48px;
-            margin-left: -48px;
-        }
-        @media (max-width: 768px) {
-            .negative-margin {
-                margin-top: -24px;
-                margin-left: -16px;
-            }
-        }
-        .rotate-element {
-            transform: rotate(1.5deg);
-        }
-
-        /* === HEADER / NAV === */
-        .site-header {
-            padding: 40px 72px 24px;
-            border-bottom: 4px solid #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 24px;
-            background-color: #000000;
-            position: relative;
-            z-index: 100;
-        }
-        @media (max-width: 768px) {
-            .site-header {
-                padding: 24px 20px 16px;
-            }
-        }
-        .logo a {
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: #ffffff;
-            text-shadow: 3px 3px 0 #ff3b00;
-            letter-spacing: 0.04em;
-            display: inline-block;
-            transform: rotate(-0.5deg);
-        }
-        .nav-list {
-            display: flex;
-            gap: 48px;
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            font-weight: 600;
-            letter-spacing: 0.04em;
-        }
-        .nav-list a {
-            padding: 8px 4px;
-            border-bottom: 3px solid transparent;
-            transition: border-color 0.15s, color 0.15s;
-        }
-        .nav-list a:hover {
-            border-bottom-color: #ff3b00;
-            color: #ff3b00;
-        }
-        /* 햄버거 버튼 (모바일) */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 6px;
-            padding: 8px;
-            border: 3px solid #ffffff;
-            background: #000000;
-        }
-        .hamburger span {
-            display: block;
-            width: 28px;
-            height: 3px;
-            background: #ffffff;
-            transition: 0.2s;
-        }
-        @media (max-width: 768px) {
-            .nav-list {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                gap: 16px;
-                padding: 24px 0 8px;
-                border-top: 3px solid #ff3b00;
-                margin-top: 16px;
-            }
-            .nav-list.open {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-        }
-
-        /* === HERO === */
-        .hero {
-            padding: 96px 0;
-            margin-top: -24px;
-            background: radial-gradient(circle at 20% 30%, #1a0a00, #000000 70%);
-            border-bottom: 6px solid #ff3b00;
-            border-top: 4px solid #ffffff;
-            position: relative;
-        }
-        .hero::after {
-            content: "✦";
-            font-size: 12rem;
-            color: #ff3b00;
-            opacity: 0.12;
-            position: absolute;
-            right: 5%;
-            bottom: -30px;
-            transform: rotate(10deg);
-            pointer-events: none;
-        }
-        .hero-content {
-            max-width: 75%;
-        }
-        @media (max-width: 768px) {
-            .hero-content {
-                max-width: 100%;
-            }
-        }
-        .hero-sub {
-            font-size: 1.6rem;
-            font-family: 'system-ui', sans-serif;
-            font-weight: 600;
-            text-transform: uppercase;
-            border-left: 6px solid #ff3b00;
-            padding-left: 16px;
-            margin-bottom: 32px;
-        }
-        .hero p {
-            font-size: 1.3rem;
-            line-height: 1.5;
-            border: 3px solid #ffffff;
-            padding: 24px;
-            background: rgba(0,0,0,0.7);
-            display: inline-block;
-        }
-        .hero-cta {
-            display: inline-block;
-            margin-top: 32px;
-            padding: 20px 48px;
-            background: #ff3b00;
-            color: #000000;
-            font-size: 2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            border: 4px solid #ffffff;
-            box-shadow: 8px 8px 0 #000000;
-            transition: 0.1s linear;
-        }
-        .hero-cta:hover {
-            background: #ffffff;
-            color: #ff3b00;
-            border-color: #ff3b00;
-            box-shadow: 8px 8px 0 #ff3b00;
-            transform: translate(-2px, -2px);
-        }
-
-        /* === REVIEW CARDS (UGC) === */
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 48px;
-        }
-        .review-card {
-            border: 4px solid #ffffff;
-            padding: 32px;
-            background: #0d0d0d;
-            box-shadow: 10px 10px 0 #ff3b00;
-            transition: 0.2s;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        .review-card:hover {
-            transform: translate(-6px, -6px);
-            box-shadow: 16px 16px 0 #ff3b00;
-        }
-        .review-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            font-weight: 600;
-            border-bottom: 3px solid #ff3b00;
-            padding-bottom: 12px;
-        }
-        .review-stars {
-            color: #ff3b00;
-            font-size: 1.4rem;
-            letter-spacing: 4px;
-        }
-        .review-text {
-            font-family: 'system-ui', sans-serif;
-            font-size: 1rem;
-            line-height: 1.5;
-            flex: 1;
-        }
-        .review-author {
-            font-weight: 700;
-            color: #ff3b00;
-        }
-
-        /* === FEATURES / DATA SECTION === */
-        .data-block {
-            border: 4px solid #ffffff;
-            padding: 48px 32px;
-            background: #0a0a0a;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 48px;
-            justify-content: space-between;
-            transform: skewX(-1deg);
-        }
-        .data-item {
-            flex: 1 1 200px;
-            border-left: 6px solid #ff3b00;
-            padding-left: 24px;
-        }
-        .data-number {
-            font-size: 4rem;
-            font-weight: 700;
-            line-height: 1;
-            color: #ff3b00;
-        }
-        .data-label {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-        }
-
-        /* === FOOTER === */
-        .site-footer {
-            border-top: 6px solid #ffffff;
-            padding: 48px 72px 32px;
-            margin-top: 96px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 32px;
-            background: #050505;
-        }
-        @media (max-width: 768px) {
-            .site-footer {
-                padding: 32px 24px;
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-        .footer-copy {
-            font-size: 0.95rem;
-            opacity: 0.8;
-        }
-        .footer-phone a {
-            font-size: 1.6rem;
-            font-weight: 700;
-            border: 3px solid #ff3b00;
-            padding: 12px 28px;
-            background: #000000;
-            display: inline-block;
-            transition: 0.15s;
-            color: #ff3b00;
-        }
-        .footer-phone a:hover {
-            background: #ff3b00;
-            color: #000000;
-        }
-
-        /* === MISC BRUTALIST TEXTURES === */
-        .texture-line {
-            width: 100%;
-            height: 4px;
-            background: repeating-linear-gradient(90deg, #ff3b00 0px, #ff3b00 12px, transparent 12px, transparent 24px);
-            margin: 48px 0;
-        }
-        .oversized-kw {
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            word-break: break-all;
-            border-top: 4px dashed #ff3b00;
-            border-bottom: 4px dashed #ff3b00;
-            padding: 24px 0;
-            margin: 60px 0;
-            font-weight: 300;
-            letter-spacing: 0.06em;
-            color: #888;
-        }
-        .btn-phone-large {
-            display: inline-block;
-            background: #ff3b00;
-            color: #000000;
-            font-size: 2.2rem;
-            font-weight: 700;
-            padding: 24px 56px;
-            border: 6px solid #ffffff;
-            box-shadow: 12px 12px 0 #000000;
-            transition: 0.1s;
-            text-transform: uppercase;
-            margin-top: 32px;
-            transform: rotate(-0.5deg);
-        }
-        .btn-phone-large:hover {
-            background: #ffffff;
-            color: #ff3b00;
-            border-color: #ff3b00;
-            box-shadow: 12px 12px 0 #ff3b00;
-            transform: rotate(-0.5deg) translate(-4px, -4px);
-        }
-    </style>
-  <meta name="msvalidate.01" content="3B4AA8395622C8C3F9C2868412D3A8C9">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>가양 클럽 비교 - 홈</title>
+  <meta name="description" content="가양 클럽을 처음 찾는 분들을 위해 인원 규모, 방문 시간, 목적에 따라 달라지는 준비 사항과 적합한 클럽 선택 기준을 상세히 안내합니다.">
+  <meta name="keywords" content="가양 클럽, 클럽 비교, 가양 클럽 정보, 클럽 선택 가이드, 클럽 방문 팁">
+  <link rel="canonical" href="https://gayang-club-guide.node-link.shop/">
+  <meta property="og:title" content="가양 클럽 비교 — 상황별 선택 가이드">
+  <meta property="og:description" content="인원 규모·시간대·목적별 클럽 준비와 선택 포인트를 한눈에 정리한 가양 클럽 비교 안내 페이지">
+  <meta property="og:url" content="https://gayang-club-guide.node-link.shop/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="가양 클럽 비교 — 상황별 선택 가이드">
+  <meta name="twitter:description" content="인원 규모·시간대·목적별 클럽 준비와 선택 포인트를 한눈에 정리한 가양 클럽 비교 안내 페이지">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Cormorant+Garamond:wght@500&family=Noto+Serif+KR:wght@400&display=swap');
+  </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="logo">
-            <a href="/">가양클럽비교</a>
-        </div>
-        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav>
-            <ul class="nav-list" id="navList">
-                <li><a href="/">홈</a></li>
-                <li><a href="#reviews">리뷰</a></li>
-                <li><a href="#data">데이터</a></li>
-                <li><a href="tel:+821062790862">전화문의</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- HERO -->
-        <section class="hero container">
-            <div class="hero-content">
-                <h1>가양 클럽<br>비교 분석</h1>
-                <div class="hero-sub">#1 가양 클럽 정보 플랫폼</div>
-                <p>전문가 데이터 &amp; 실제 이용자 평가로<br>가양 최적의 클럽을 찾으세요.</p>
-                <a href="tel:+821062790862" class="hero-cta">☎ 010-6279-0862</a>
-            </div>
-        </section>
-
-        <!-- 데이터/수치 섹션 -->
-        <section id="data" class="container section-gap">
-            <h2>가양 클럽 시장 분석</h2>
-            <div class="data-block">
-                <div class="data-item">
-                    <div class="data-number">47+</div>
-                    <div class="data-label">활성 클럽</div>
-                </div>
-                <div class="data-item">
-                    <div class="data-number">4.7</div>
-                    <div class="data-label">평균 평점</div>
-                </div>
-                <div class="data-item">
-                    <div class="data-number">1,892</div>
-                    <div class="data-label">인증 리뷰</div>
-                </div>
-                <div class="data-item">
-                    <div class="data-number">24/7</div>
-                    <div class="data-label">실시간 비교</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- UGC 리뷰 섹션 -->
-        <section id="reviews" class="container section-gap">
-            <h2>실제 이용자 평가</h2>
-            <div class="review-grid">
-                <!-- 카드 1 -->
-                <article class="review-card">
-                    <div class="review-meta">
-                        <span class="review-author">클럽마스터K</span>
-                        <span>2025-02-14</span>
-                    </div>
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">가양에서 가장 완성도 높은 클럽 비교 사이트. 데이터가 정확하고 추천이 신뢰감 있다. 내 취향에 딱 맞는 클럽을 찾았다.</p>
-                </article>
-                <!-- 카드 2 -->
-                <article class="review-card">
-                    <div class="review-meta">
-                        <span class="review-author">나잇라이프연구소</span>
-                        <span>2025-02-10</span>
-                    </div>
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">클럽별 실시간 혼잡도와 가격 비교가 유용하다. 매주 업데이트되는 리뷰도 신뢰할 만함. 가양 클럽 입문자에게 강추.</p>
-                </article>
-                <!-- 카드 3 -->
-                <article class="review-card">
-                    <div class="review-meta">
-                        <span class="review-author">DJ_혁</span>
-                        <span>2025-01-28</span>
-                    </div>
-                    <div class="review-stars">★★★★☆</div>
-                    <p class="review-text">전문적인 분석과 실제 방문 후기가 잘 정리되어 있다. 음악 장르별 필터가 생기면 더 좋을 듯. 전반적으로 만족.</p>
-                </article>
-                <!-- 카드 4 -->
-                <article class="review-card">
-                    <div class="review-meta">
-                        <span class="review-author">늦은
-
-
-
-
-
-
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-11">2026-06-11</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <h3>포스트 DNA 52d6551e **** "아식스 젤 카야노 리스탁에서 인솔 로고 프린트의 달라짐과 그 중요성" #### 구체적 맥락 아식스 젤 카야노 14 OG 아이보리 컬러웨이가 이번에 출시된 2023년 리스탁에서 인솔 로고 프린트가 달라졌습니다. 이 변화는</h3>
+  <header class="header">
+    <div class="logo"><a href="/">가양 클럽 가이드</a></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/">홈</a></li>
+        <li><a href="/compare">클럽 비교</a></li>
+        <li><a href="/tips">방문 팁</a></li>
+        <li><a href="/contact">연락처</a></li>
+      </ul>
+      <div class="hamburger-menu">
+        <span></span><span></span><span></span>
       </div>
-      <a href="posts/checklist-002-87shd0.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⚖️ COMPARE</span>
-          <time datetime="2026-06-11">2026-06-11</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <h3>키워드 컨텍스트이 글의 배경 비즈니스 키워드는 "가양 클럽 비교"입니다. 글의 흐름 속에서 이 키워드와 자연스럽게 연결되는 지점이 있다면 활용하되, 절대 직접적인 광고나 판매 유도로 이어지지 않도록 주의하세요. #### 포스트 DNA 4023f91e관점: 초보자</h3>
-      </div>
-      <a href="posts/compare-001-87shd0.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">가양 클럽 비교 경험자에게 물어본 현실적인 판단 기준</h4>
-        <h3>제목: 창작한 제목: "SB Dunk의 깊숙한 진실: 스티치 밀도와 재질 변화의 비용-시간-위험 비교" #### ## 가양 클럽 비교 실용 판단: SB Dunk 로그인 차원에서의 가치와 위험 --- ### 문제 자opsy: 진품 감별 포인트 하나만 틀려도 수백만</h3>
-      </div>
-      <a href="posts/interview-001-kln6gn.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">가양 클럽 비교 관련 추천 정보 — 놓치면 후회할 꿀팁</h4>
-        <h3>제목: 창작한 제목 "권리금 2억 받고 나간 가게의 실거래 내역서와 합정 셔츠룸 룩북 비교" ## 포스트 메타정보포스트 기획 테마: 가양 클럽 비교 관련 추천 정보 — 놓치면 후회할 꿀팁 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라</h3>
-      </div>
-      <a href="posts/t3link-002-kln6gn.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
-</section>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- 소개 섹션 -->
+    <section class="intro">
+      <h1>가양 클럽을 처음 만나는 당신에게</h1>
+      <p>가양은 다양한 분위기의 클럽이 모여 있는 핫플레이스입니다. 처음 방문한다면 어떤 클럽이 자신에게 맞을지 고민이 될 수밖에 없죠. 이 페이지에서는 인원 규모, 방문 시점, 그리고 방문 목적에 따라 최적의 클럽을 고르는 체크포인트를 정리했습니다. 친절한 어조와 실제 경험담을 기반으로, 여러분이 손쉽게 원하는 분위기를 찾아갈 수 있도록 돕습니다.</p>
+      <p>또한, 각 클럽마다 제공하는 서비스와 분위기가 다르기 때문에 사전에 알아두면 좋은 팁을 함께 공유합니다. 이번 가이드를 통해 “어디서 어떤 분위기로 놀까?”라는 질문에 대한 답을 확실히 얻어 가시길 바랍니다.</p>
+    </section>
+
+    <!-- 인원 규모별 준비 팁 -->
+    <section class="size-tips">
+      <h2>인원 규모에 맞는 클럽 선택과 준비</h2>
+      <p>소규모(2~4인) 파티라면 조용하고 프라이빗한 라운지를 제공하는 클럽이 적합합니다. 예약 시 최소 인원 제한이 있는지 확인하고, 좌석 배치가 자유로운 곳을 골라야 합니다. 이런 클럽은 보통 조명과 음악이 부드럽게 흐르며, 대화가 중심이 되기 때문에 음료 선택도 중요합니다. 미리 메뉴를 살펴보고, 와인이나 칵테일 한 잔 정도를 미리 주문해 두면 분위기가 한층 살아납니다.</p>
+      <p>반면에 대규모(10명 이상) 모임이라면 파티룸이나 대형 메인 플로어가 있는 클럽을 고려하세요. 다 함께 즐길 수 있는 DJ 파티와 대형 스크린, 넓은 안주 코너가 있는 곳이 좋습니다. 사전에 인원 수와 예약 가능 시간대를 확인하고, 인원당 최소 소비 금액이 있는지 체크하면 예산 초과를 방지할 수 있습니다.</p>
+      <p>중간 규모(5~9인)라면 두 가지 옵션을 모두 만족시키는 멀티룸 클럽이 이상적입니다. 메인 라운지와 별도 파티룸을 자유롭게 전환할 수 있어 분위기 변화를 주기에 유리합니다. 각 방의 음악 볼륨을 조절할 수 있는지, 조명 색상 변경이 가능한지 물어보면 보다 맞춤형 파티를 만들 수 있습니다.</p>
+    </section>
+
+    <!-- 시간대별 방문 전략 -->
+    <section class="time-tips">
+      <h2>시간대별 클럽 방문 전략</h2>
+      <p>저녁 7시~9시 초입 시각은 입장 인원이 비교적 적고, 바텐더가 여유롭게 서비스를 제공하는 구간입니다. 이때는 고급 칵테일이나 와인을 즐기기에 최적이며, 클럽 내부를 천천히 둘러볼 수 있는 장점이 있습니다. 또한, 음악 볼륨이 아직 최고조에 이르지 않아 대화가 가능하니 비즈니스 미팅 겸 클럽 방문에도 적합합니다.</p>
+      <p>밤 10시~12시 사이가 클럽이 가장 활기를 띠는 피크 타임입니다. DJ가 본격적인 세트를 시작하고, 무대 조명도 화려해집니다. 이때는 댄스 플로어가 붐비고, 에너지 넘치는 분위기를 즐기고 싶은 사람들에게 최적입니다. 단, 입장 대기 시간이 길어질 수 있으니 미리 입장권을 구매하거나 사전 예약을 권장합니다.</p>
+      <p>새벽 1시 이후는 일부 클럽이 마감 직전이지만, 여전히 파티가 이어지는 경우가 있습니다. 이때는 인원 제한이 완화되고, 입장료가 저렴해지는 특권이 제공되는 경우도 있습니다. 다만, 보안 및 안전 절차가 강화될 수 있으니 신분증과 회원 카드를 꼭 챙기세요.</p>
+    </section>
+
+    <!-- 목적별 클럽 선택 포인트 -->
+    <section class="purpose-tips">
+      <h2>방문 목적에 따라 클럽을 고르는 포인트</h2>
+      <p>친구와의 캐주얼한 모임이라면 음악 장르가 다양하고, 다양한 음료를 즐길 수 있는 ‘올인원’ 스타일 클럽을 선택하세요. 이러한 클럽은 좌석 배치가 자유롭고, 소규모 라운지와 대형 무대가 동시에 운영돼 분위기 전환이 쉽습니다.</p>
+      <p>비즈니스 네트워킹이나 파트너십을 위한 방문이라면, 조용한 라운지와 고급 와인 리스트가 갖춰진 ‘비즈니스 라운지’가 적합합니다. 예약 시 비즈니스 전용 공간이 있는지 확인하고, 프라이버시가 보장되는 방을 미리 섭외하면 대화에 집중할 수 있습니다.</p>
+      <p>특별한 이벤트(생일 파티, 기념일 등)를 계획 중이라면, 맞춤형 파티 패키지를 제공하는 클럽을 찾아보세요. 대부분의 클럽이 테마 장식, 전용 DJ, 사진 촬영 서비스를 옵션으로 제공하므로, 미리 요구사항을 전달하면 세심하게 준비된 이벤트를 즐길 수 있습니다.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2>자주 묻는 질문</h2>
+      <article class="faq-item">
+        <h3>클럽 입장 시 나이 제한은 어떻게 되나요?</h3>
+        <p>대부분의 가양 클럽은 만 19세 이상을 입장 기준으로 삼고 있습니다. 신분증 확인이 필수이며, 해외 여권도 인정됩니다. 특정 라운지는 21세 이상만 입장 가능하니, 사전 문의가 필요합니다.</p>
+      </article>
+      <article class="faq-item">
+        <h3>예약 없이 바로 들어갈 수 있나요?</h3>
+        <p>피크 타임에는 대기 인원이 많아 입장이 어려울 수 있습니다. 가급적 사전 예약을 권장하지만, 비피크 타임(오후 2시~5시)에는 바로 입장이 가능합니다. 다만, 특정 테마 파티나 이벤트는 사전 예약이 필수입니다.</p>
+      </article>
+      <article class="faq-item">
+        <h3>음식이 제공되는 클럽은 어디인가요?</h3>
+        <p>가양 지역에는 뷔페식 라운지, 스낵 바, 그리고 풀코스 다이닝을 제공하는 클럽이 혼합되어 있습니다. 음식 종류와 메뉴는 클럽마다 차이가 크니, 방문 전 메뉴판을 확인하거나 전화 문의를 통해 최신 정보를 얻는 것이 좋습니다.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 가양 클럽 가이드. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // 기존 디자인 시스템에 맞춘 JavaScript (햄버거 메뉴 토글 등)
+    const hamburger = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('.nav ul');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
