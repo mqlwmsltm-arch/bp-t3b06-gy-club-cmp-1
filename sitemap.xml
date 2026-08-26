@@ -16,17 +16,82 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/checklist-002-87shd0.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://gayang-club-guide.node-link.shop/posts/compare-001-87shd0.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260705-538.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260719-0085.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260719-0086.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260719-0087.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260719-0088.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260721-0474.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/interview-001-kln6gn.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/normal-1.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/t3link-002-kln6gn.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/checklist-002-87shd0.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/juice-1.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/juice-2.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/normal-2.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gayang-club-guide.node-link.shop/posts/normal-3.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -76,26 +141,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260719-0085.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260719-0086.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260719-0087.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260719-0088.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260719-0089.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -112,11 +157,6 @@
   </url>
   <url>
     <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260721-0473.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260721-0474.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -172,51 +212,6 @@
   </url>
   <url>
     <loc>https://gayang-club-guide.node-link.shop/posts/gemini-coverage-20260722-0066.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/interview-001-kln6gn.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/juice-1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/juice-2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/normal-1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/normal-2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/normal-3.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts/t3link-002-kln6gn.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://gayang-club-guide.node-link.shop/posts-2.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
